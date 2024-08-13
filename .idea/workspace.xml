@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="030132c9-22f8-46c4-b2a7-c2fbc10bbbaa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsaggregator/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsaggregator/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsaggregator/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsaggregator/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsaggregator/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/NewsaggregatorApiApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsaggregator/src/test/java/com/airtribe/rohit/newsaggregator/NewsaggregatorApiApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +18,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "rohit-sanwariya"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/rohit-sanwariya/AirtribeSpringNewsAggregator.git",
