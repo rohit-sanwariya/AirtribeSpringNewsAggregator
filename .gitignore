@@ -1,0 +1,70 @@
+# Node modules and Angular-specific
+node_modules/
+dist/
+coverage/
+package-lock.json
+yarn.lock
+npm-debug.log
+*.tgz
+*.cache
+*.lock
+
+# Angular build artifacts
+.angular/
+
+# IDE and editor-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.eml
+*.swp
+*.swo
+
+# Spring and Java-specific
+target/
+*.jar
+*.war
+*.class
+*.log
+*.pid
+*.hprof
+
+# Spring Boot specific
+*.iml
+*.jfr
+*.pdb
+*.hprof
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Maven files
+.mvn/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+*.orig
+
+# Gradle files
+.gradle/
+build/
+gradle/
+!gradle-wrapper.jar
+
+# Logs and other temp files
+*.log
+*.tmp
+
+# Environment files
+.env
+*.env
+
+# Other generated files
+*.log
+*.tmp
+*.pid
+*.seed
+*.out
