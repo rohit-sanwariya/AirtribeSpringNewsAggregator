@@ -1,8 +1,8 @@
 package com.airtribe.rohit.newsaggregator.user;
 
 
+import com.airtribe.rohit.newsaggregator.role.Role;
 import jakarta.persistence.*;
-import org.hibernate.id.factory.spi.GenerationTypeStrategy;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -22,7 +22,13 @@ public class User implements UserDetails {
 
     private String password;
 
-    private String role;
+    @ManyToOne(fetch = FetchType.EAGER,targetEntity = Role.class)
+    @JoinTable(
+            name = "user_roles",
+            joinColumns = @JoinColumn(name="user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id")
+    )
+    private Collection<Role> roles;
 
     private boolean isNonExpired;
     private boolean isNonLocked;
@@ -30,11 +36,11 @@ public class User implements UserDetails {
     private boolean isAccountNonLocked;
     private boolean isAccountEnabled;
 
-    public User(Long id, String username, String password, String role) {
+    public User(Long id, String username, String password, Collection<Role> role) {
         this.id = id;
         this.username = username;
         this.password = password;
-        this.role = role;
+        this.roles = role;
     }
 
     public User(String username, String password) {
@@ -42,10 +48,10 @@ public class User implements UserDetails {
         this.password = password;
     }
 
-    public User(String username, String password, String role) {
+    public User(String username, String password, Collection<Role> roles) {
         this.username = username;
         this.password = password;
-        this.role = role;
+        this.roles = roles;
     }
 
     @Override
