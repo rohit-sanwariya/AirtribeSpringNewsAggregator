@@ -41,7 +41,7 @@ public class User implements UserDetails {
 
 
 
-    @ManyToOne(fetch = FetchType.EAGER,targetEntity = Role.class)
+    @ManyToMany(fetch = FetchType.EAGER,targetEntity = Role.class)
     @JoinTable(
             name = "user_roles",
             joinColumns = @JoinColumn(name="user_id"),
