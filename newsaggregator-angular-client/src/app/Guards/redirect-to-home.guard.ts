@@ -1,5 +1,7 @@
-import { CanActivateFn } from '@angular/router';
+import { inject } from '@angular/core';
+import { CanActivateFn, Router } from '@angular/router';
 
 export const redirectToHomeGuard: CanActivateFn = (route, state) => {
-  return false;
+  if(localStorage.getItem('authLogin')) {inject(Router).navigate(["/app"]);return false;}
+  return true;
 };

@@ -3,23 +3,30 @@ package com.airtribe.rohit.newsaggregator.role;
 
 import com.airtribe.rohit.newsaggregator.user.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
+import jakarta.persistence.*;
+import lombok.*;
 
-import java.util.Collection;
-import java.util.Set;
+
+import java.util.List;
+
 
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@Getter
+@Setter
+@SequenceGenerator(name = "role_seq", sequenceName = "role_seq")
 public class Role {
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "role_seq")
+    @SequenceGenerator(name = "role_seq", sequenceName = "role_seq", allocationSize = 1)
     private Long id;
 
     @Column(unique = true)
     private  String name;
     @ManyToMany(mappedBy = "roles")
     @JsonIgnore
-    private Set<User> users;
+    private List<User> users;
 
 }

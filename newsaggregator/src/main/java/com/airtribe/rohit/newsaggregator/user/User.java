@@ -3,6 +3,9 @@ package com.airtribe.rohit.newsaggregator.user;
 
 import com.airtribe.rohit.newsaggregator.role.Role;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -11,6 +14,12 @@ import java.util.List;
 
 @Entity
 @Table(name = "authusers")
+
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class User implements UserDetails {
 
     @Id
@@ -21,6 +30,16 @@ public class User implements UserDetails {
     private  String username;
 
     private String password;
+
+    @NotEmpty
+    @NotNull
+    private String firstname;
+
+    @NotEmpty
+    @NotNull
+    private String lastname;
+
+
 
     @ManyToOne(fetch = FetchType.EAGER,targetEntity = Role.class)
     @JoinTable(

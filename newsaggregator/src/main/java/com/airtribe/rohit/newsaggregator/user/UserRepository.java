@@ -1,8 +1,8 @@
-package com.airtribe.rohit.newsaggregator.repository;
+package com.airtribe.rohit.newsaggregator.user;
 
-import com.airtribe.rohit.newsaggregator.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
 
 @Repository
 public interface UserRepository extends JpaRepository<User,Long> {

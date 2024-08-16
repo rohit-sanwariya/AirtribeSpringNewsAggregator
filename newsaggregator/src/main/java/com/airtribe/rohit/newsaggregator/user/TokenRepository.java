@@ -1,6 +1,5 @@
-package com.airtribe.rohit.newsaggregator.repository;
+package com.airtribe.rohit.newsaggregator.user;
 
-import com.airtribe.rohit.newsaggregator.user.Token;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

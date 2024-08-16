@@ -5,8 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="030132c9-22f8-46c4-b2a7-c2fbc10bbbaa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/role/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Guards/redirect-to-home.guard.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Guards/redirect-to-home.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Guards/redirect-to-login.guard.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Guards/redirect-to-login.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/home/home.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/home/home.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/home/home.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/home/home.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/login/login.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/login/login.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/login/login.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/login/login.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/sign-up/sign-up.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/sign-up/sign-up.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/sign-up/sign-up.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/sign-up/sign-up.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/app.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/app.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/app.routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator-angular-client/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/auth/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/auth/RegistrationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/role/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/services/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/TokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/role/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/role/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/resources/application-dev.properties" afterDir="false" />
     </list>
@@ -18,6 +64,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -37,6 +84,9 @@
     &quot;accountId&quot;: &quot;1fdc1c5a-5525-4003-bcc5-e075604d231f&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -48,15 +98,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.NewsaggregatorApiApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.NewsaggregatorApiApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="NewsaggregatorApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.airtribe.rohit.newsaggregator.NewsaggregatorApiApplication" />
+      <module name="newsaggregator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.airtribe.rohit.newsaggregator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.NewsaggregatorApiApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -81,5 +151,38 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.context.annotation.ConflictingBeanDefinitionException" package="org.springframework.context.annotation" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/auth/AuthController.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/UserService.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/UserService.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

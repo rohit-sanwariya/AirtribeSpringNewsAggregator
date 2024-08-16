@@ -1,11 +1,8 @@
-package com.airtribe.rohit.newsaggregator.services;
+package com.airtribe.rohit.newsaggregator.user;
 
 import com.airtribe.rohit.newsaggregator.auth.RegistrationRequest;
 import com.airtribe.rohit.newsaggregator.role.Role;
-import com.airtribe.rohit.newsaggregator.user.Token;
-import com.airtribe.rohit.newsaggregator.user.User;
-import com.airtribe.rohit.newsaggregator.repository.UserRepository;
-import lombok.RequiredArgsConstructor;
+import com.airtribe.rohit.newsaggregator.services.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +12,7 @@ import java.util.Optional;
 @Service
 
 public class UserService {
-
+    @Autowired
     private  UserRepository userRepository;
     private final RoleService roleService;
     public UserService(RoleService roleService) {

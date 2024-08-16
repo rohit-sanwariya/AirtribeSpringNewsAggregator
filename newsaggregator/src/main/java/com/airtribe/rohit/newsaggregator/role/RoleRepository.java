@@ -1,7 +1,6 @@
-package com.airtribe.rohit.newsaggregator.repository;
+package com.airtribe.rohit.newsaggregator.role;
 
 
-import com.airtribe.rohit.newsaggregator.role.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
