@@ -5,7 +5,7 @@
         Sign in to your account
       </h2>
     </div>
-    <form autocomplete="off"  #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+    <form autocomplete="off"  #loginForm="ngForm" (ngSubmit)="onSubmit()">
       <mat-form-field   class="m-3">
         <mat-label >Username</mat-label>
         <input matInput placeholder="Username" required [(ngModel)]="username" name="username" >

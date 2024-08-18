@@ -4,8 +4,9 @@ import { FormControl, FormGroup, FormsModule, NgForm, ReactiveFormsModule, Valid
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { HttpService } from '../../Services/http.service';
+import { AuthUserResponse } from '../../Models/user-auth-model';
 
 @Component({
   selector: 'app-sign-up',
@@ -19,6 +20,7 @@ export default class
 SignUpComponent implements OnInit {
   registerForm!: FormGroup;
   _http:HttpService = inject(HttpService);
+  private _router = inject(Router);
   ngOnInit(): void {
     this.registerForm = new FormGroup({
       firstname: new FormControl('', [Validators.required]),
@@ -30,9 +32,12 @@ SignUpComponent implements OnInit {
  
 
   onSubmit() {
-     this._http.POST('/auth/user/register', this.registerForm.value).subscribe({
-      next:(data)=>{
-        console.log(data);
+     this._http.POST<AuthUserResponse,any>('/auth/user/register', this.registerForm.value).subscribe({
+      next:(response)=>{
+        if(response.data.token){
+          localStorage.setItem('authLogin',JSON.stringify(response.data.token));
+          this._router.navigateByUrl("/app");
+         }
       }
      });
   }

@@ -1,9 +1,12 @@
-import { AfterViewInit, ChangeDetectionStrategy, Component, model } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, model } from '@angular/core';
 import {MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule } from '@angular/material/input';
 import {MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
+import { HttpService } from '../../Services/http.service';
+import { AuthUserResponse } from '../../Models/user-auth-model';
+ 
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -13,12 +16,18 @@ import { RouterLink } from '@angular/router';
   changeDetection:ChangeDetectionStrategy.OnPush,
 })
 export default class LoginComponent  {
- 
+  _http = inject(HttpService);
+  _router = inject(Router);
   username = model<string|null>(null);
   password = model<string|null>(null);
-  onSubmit(loginForm:any) {
-    console.log(this.username(),this.password());
-    
-  }
-
+  onSubmit() {
+    this._http.POST<AuthUserResponse,{username:string|null,password:string|null}>('/auth/user/signin', {username:this.username(),password:  this.password()}).subscribe({
+     next:(response)=>{
+       if(response.data.token){
+        localStorage.setItem('authLogin',JSON.stringify(response.data.token));
+        this._router.navigateByUrl("/app");
+       }
+     }
+    });
+ }
 }
