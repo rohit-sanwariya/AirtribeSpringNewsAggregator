@@ -11,6 +11,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "authusers")
@@ -39,7 +40,8 @@ public class User implements UserDetails {
     @NotNull
     private String lastname;
 
-
+    @OneToMany(mappedBy = "user",fetch = FetchType.LAZY, cascade = CascadeType.ALL,orphanRemoval = true)
+    private List<Token> tokens;
 
     @ManyToMany(fetch = FetchType.EAGER,targetEntity = Role.class)
     @JoinTable(

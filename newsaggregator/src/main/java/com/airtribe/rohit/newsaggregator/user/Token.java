@@ -1,6 +1,9 @@
 package com.airtribe.rohit.newsaggregator.user;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.Builder;
@@ -22,14 +25,18 @@ import java.util.Date;
 
 public class Token {
     @Id
+    @NotNull
+
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
 
 
     private String token;
     private Date expiresAt;
-    @OneToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(nullable = false,name = "userId")
+    @JsonIgnore
     private User user;
 
 

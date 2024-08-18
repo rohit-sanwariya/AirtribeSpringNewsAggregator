@@ -1,6 +1,7 @@
 package com.airtribe.rohit.newsaggregator.auth;
 
-import com.airtribe.rohit.newsaggregator.user.User;
+import com.airtribe.rohit.newsaggregator.models.ResponseModel;
+import com.airtribe.rohit.newsaggregator.user.UserRegistrationResponseDto;
 import com.airtribe.rohit.newsaggregator.user.UserService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,7 +19,12 @@ public class AuthController {
     }
 
     @PostMapping("/register")
-    public User registerUser(@RequestBody RegistrationRequest request){
+    public UserRegistrationResponseDto registerUser(@RequestBody RegistrationRequest request){
         return service.registerUser(request);
+    }
+
+    @PostMapping("/signin")
+    public ResponseModel registerUser(@RequestBody LoginRequest request){
+        return service.loginUser(request);
     }
 }
