@@ -2,6 +2,7 @@ package com.airtribe.rohit.newsaggregator.role;
 
 
 import com.airtribe.rohit.newsaggregator.user.User;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
@@ -25,8 +26,6 @@ public class Role {
 
     @Column(unique = true)
     private  String name;
-    @ManyToMany(mappedBy = "roles")
-    @JsonIgnore
-    private List<User> users;
+
 
 }

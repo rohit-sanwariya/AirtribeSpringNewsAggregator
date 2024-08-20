@@ -5,9 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="030132c9-22f8-46c4-b2a7-c2fbc10bbbaa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/config/AuthManagerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/config/WebClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/controller/NewsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/middleware/JwtAuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/models/newsapi/NewSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/models/newsapi/NewsArticle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/models/newsapi/NewsResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/services/NewsApiService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/sign-up/sign-up.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/sign-up/sign-up.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Services/http.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Services/http.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/auth/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/auth/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/controller/RoleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/role/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/role/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/services/JwtTokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/services/JwtTokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/services/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/services/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/UserRegistrationResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/UserRegistrationResponseDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/resources/application-dev.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +75,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.NewsaggregatorApiApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NewsaggregatorApiApplication.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
@@ -108,32 +129,83 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
+        <breakpoint type="java-exception">
           <properties class="org.springframework.context.annotation.ConflictingBeanDefinitionException" package="org.springframework.context.annotation" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
+        <breakpoint type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="2" />
         </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
-          <option name="timeStamp" value="3" />
-        </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/auth/AuthController.java</url>
           <line>21</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/UserService.java</url>
-          <line>38</line>
+          <line>45</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/UserService.java</url>
-          <line>37</line>
+          <line>44</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/middleware/JwtAuthFilter.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/middleware/JwtAuthFilter.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/middleware/JwtAuthFilter.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/services/JwtTokenService.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/services/JwtTokenService.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/middleware/JwtAuthFilter.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/services/JwtTokenService.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/services/JwtTokenService.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/services/RoleService.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/controller/RoleController.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/middleware/JwtAuthFilter.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

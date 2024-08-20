@@ -2,6 +2,7 @@ package com.airtribe.rohit.newsaggregator.user;
 
 
 import com.airtribe.rohit.newsaggregator.role.Role;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
@@ -43,13 +44,14 @@ public class User implements UserDetails {
     @OneToMany(mappedBy = "user",fetch = FetchType.LAZY, cascade = CascadeType.ALL,orphanRemoval = true)
     private List<Token> tokens;
 
-    @ManyToMany(fetch = FetchType.EAGER,targetEntity = Role.class)
-    @JoinTable(
-            name = "user_roles",
-            joinColumns = @JoinColumn(name="user_id"),
-            inverseJoinColumns = @JoinColumn(name = "role_id")
-    )
-    private Collection<Role> roles;
+    @ManyToOne(targetEntity = Role.class, fetch = FetchType.EAGER,
+            cascade = {CascadeType.PERSIST,
+                    CascadeType.MERGE,
+                    CascadeType.DETACH})
+
+
+
+    private Role role;
 
     private boolean isNonExpired;
     private boolean isNonLocked;
@@ -57,11 +59,11 @@ public class User implements UserDetails {
     private boolean isAccountNonLocked;
     private boolean isAccountEnabled;
 
-    public User(Long id, String username, String password, Collection<Role> role) {
+    public User(Long id, String username, String password, Role role) {
         this.id = id;
         this.username = username;
         this.password = password;
-        this.roles = role;
+        this.role = role;
     }
 
     public User(String username, String password) {
@@ -69,10 +71,10 @@ public class User implements UserDetails {
         this.password = password;
     }
 
-    public User(String username, String password, Collection<Role> roles) {
+    public User(String username, String password, Role role) {
         this.username = username;
         this.password = password;
-        this.roles = roles;
+        this.role = role;
     }
 
     @Override

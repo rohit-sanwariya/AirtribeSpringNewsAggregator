@@ -2,6 +2,7 @@ package com.airtribe.rohit.newsaggregator.controller;
 
 import com.airtribe.rohit.newsaggregator.role.Role;
 import com.airtribe.rohit.newsaggregator.services.RoleService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,9 +22,9 @@ public class RoleController {
     }
 
     @GetMapping("/get/all")
-    public List<Role> getRoles(){
-
-        return roleService.getRoles();
+    public ResponseEntity<String> getRoles(){
+//        List<Role> roles = roleService.getRoles();
+        return ResponseEntity.ok("hello world");
     }
     @GetMapping("{name}")
     public Role createRole(@PathVariable("name") String name){

@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -11,10 +11,18 @@ export class HttpService {
 
 
   public GET<T>(url:string):Observable<T>{
-    return this._http.get<T>(this.baseurl+ url);
+    const token = JSON.parse(localStorage.getItem('authLogin')!).token;
+    const headers = new HttpHeaders(
+      {
+        'Content-Type': 'application/json',
+        "Authorization":"Bearer " + token
+      },
+
+    );
+    return this._http.get<T>(this.baseurl+ url,{headers:headers});
   }
   
-  POST<R,P>(url: string, value: P):Observable<R> {
+  POSTUnautorized<R,P>(url: string, value: P):Observable<R> {
     return this._http.post<R>(this.baseurl+ url, value);
   }
 

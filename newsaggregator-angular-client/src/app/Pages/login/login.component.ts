@@ -21,7 +21,7 @@ export default class LoginComponent  {
   username = model<string|null>(null);
   password = model<string|null>(null);
   onSubmit() {
-    this._http.POST<AuthUserResponse,{username:string|null,password:string|null}>('/auth/user/signin', {username:this.username(),password:  this.password()}).subscribe({
+    this._http.POSTUnautorized<AuthUserResponse,{username:string|null,password:string|null}>('/api/login', {username:this.username(),password:  this.password()}).subscribe({
      next:(response)=>{
        if(response.data.token){
         localStorage.setItem('authLogin',JSON.stringify(response.data.token));

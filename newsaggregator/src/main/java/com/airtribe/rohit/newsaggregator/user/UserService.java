@@ -9,6 +9,9 @@ import com.airtribe.rohit.newsaggregator.services.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -19,9 +22,13 @@ import java.util.*;
 public class UserService {
     @Autowired
     private  UserRepository userRepository;
+    @Autowired
+    private AuthenticationManager authenticationManager;
     private final RoleService roleService;
-    public UserService(RoleService roleService) {
+    private final UserDetailsService userDetailsService;
+    public UserService(RoleService roleService, UserDetailsService userDetailsService) {
         this.roleService = roleService;
+        this.userDetailsService = userDetailsService;
     }
     @Autowired
     private TokenRepository tokenRepository;
@@ -65,7 +72,7 @@ public class UserService {
                 .isNonExpired(true)
                 .isAccountNonLocked(true)
                 .isCredentialNonExpired(true)
-                .roles(List.of(role))
+                .role(role)
                 .build();
         user.setTokens(new ArrayList<>());
         t.setUser(user);
@@ -78,7 +85,7 @@ public class UserService {
                 .id(user.getId())
                 .firstname(user.getFirstname())
                 .lastname(user.getLastname())
-                .roles((List<Role>) user.getRoles())
+                .role(user.getRole())
                 .token(t)
                 .username(user.getUsername())
                 .build();
@@ -88,17 +95,18 @@ public class UserService {
 
     public ResponseModel loginUser(LoginRequest request) {
         String name =  request.getUsername();
+
+        authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(name,request.getPassword())
+        );
         User user = userRepository.findByUsername(name);
+        if(user != null ){
 
-
-        if(user != null && passwordEncoder.matches(request.getPassword(),user.getPassword())){
-            CharSequence sequence = request.getPassword();
-            System.out.println(passwordEncoder.matches(sequence,user.getPassword()));
             UserRegistrationResponseDto data =  UserRegistrationResponseDto.builder()
                     .id(user.getId())
                     .firstname(user.getFirstname())
                     .lastname(user.getLastname())
-                    .roles((List<Role>) user.getRoles())
+                    .role(user.getRole())
                     .username(user.getUsername())
 
                     .build();

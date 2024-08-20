@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/auth/user")
+@RequestMapping("/api")
 public class AuthController {
 
     private final UserService service;
@@ -23,7 +23,7 @@ public class AuthController {
         return service.registerUser(request);
     }
 
-    @PostMapping("/signin")
+    @PostMapping("/login")
     public ResponseModel registerUser(@RequestBody LoginRequest request){
         return service.loginUser(request);
     }

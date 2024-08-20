@@ -25,9 +25,8 @@ public class RoleService {
 
     public String assignRole(User user,String roleName){
         Role role = repository.findByName(roleName);
-        var x = user.getRoles();
-        x.add(role);
-        user.setRoles(x);
+
+        user.setRole(role);
         return "success";
     }
 

@@ -1,16 +1,20 @@
 package com.airtribe.rohit.newsaggregator.security;
 
 
+import com.airtribe.rohit.newsaggregator.middleware.JwtAuthFilter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configurers.CsrfConfigurer;
 import org.springframework.security.config.annotation.web.configurers.HeadersConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
@@ -21,21 +25,25 @@ import java.util.Arrays;
 @Configuration
 @EnableWebSecurity(debug = true)
 public class SecurityConfig {
+
+    @Autowired
+    private JwtAuthFilter jwtAuthFilter;
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.cors(Customizer.withDefaults())
-              .csrf(c->c.ignoringRequestMatchers("/h2-console/**","/auth/user/register","/auth/user/signin"))
-
+                .csrf(CsrfConfigurer::disable)
                 .authorizeHttpRequests(
                         authorizationManagerRequestMatcherRegistry -> authorizationManagerRequestMatcherRegistry
-                                .requestMatchers("/h2-console/**")
+                                .requestMatchers("/h2-console/**","/api/login","/api/register")
                                 .permitAll()
-                                .requestMatchers("/auth/**")
-                                .permitAll()
-                                .requestMatchers("/public/**")
-                                .permitAll()
+                                .anyRequest().authenticated()
+                ).sessionManagement(s->s.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+
                 )
+                .addFilterBefore(this.jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
         ;
+
         return http.build();
     }
     @Bean

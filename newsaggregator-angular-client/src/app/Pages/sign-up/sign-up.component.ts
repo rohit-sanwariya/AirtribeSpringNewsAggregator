@@ -32,7 +32,7 @@ SignUpComponent implements OnInit {
  
 
   onSubmit() {
-     this._http.POST<AuthUserResponse,any>('/auth/user/register', this.registerForm.value).subscribe({
+     this._http.POSTUnautorized<AuthUserResponse,any>('/api/register', this.registerForm.value).subscribe({
       next:(response)=>{
         if(response.data.token){
           localStorage.setItem('authLogin',JSON.stringify(response.data.token));

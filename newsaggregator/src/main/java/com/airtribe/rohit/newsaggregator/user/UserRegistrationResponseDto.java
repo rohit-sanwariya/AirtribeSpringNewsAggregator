@@ -12,7 +12,7 @@ import java.util.List;
 @Builder
 public class UserRegistrationResponseDto {
     private long id;
-    private List<Role> roles;
+    private Role role;
     private String username;
     private String firstname;
     private String lastname;
