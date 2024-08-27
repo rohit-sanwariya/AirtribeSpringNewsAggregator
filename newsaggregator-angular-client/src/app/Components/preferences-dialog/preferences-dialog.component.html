@@ -1,0 +1,25 @@
+<div class="flex flex-col h-screen p-4 space-y-4">
+  <div class="flex-1 p-1">
+    <h2 mat-dialog-title class="text-2xl font-bold mb-4">Preferences</h2>
+  </div>
+
+  <div class="flex-3 p-1">
+    <form   class="space-y-4">
+      <mat-form-field appearance="fill" class="w-full">
+        <mat-label>Preferences</mat-label>
+        <mat-select [formControl]="preferences" multiple>
+          <mat-option *ngFor="let preference of data.allPreferences" [value]="preference.id">
+            {{ preference.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+  </div>
+
+  <div class="flex-1 p-1">
+    <div mat-dialog-actions class="flex justify-end space-x-2 mt-4">
+      <button mat-flat-button (click)="close()">Cancel</button>
+      <button mat-raised-button color="primary" (click)="save()">Save</button>
+    </div>
+  </div>
+</div>

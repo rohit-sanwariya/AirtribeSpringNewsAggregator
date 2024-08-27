@@ -40,7 +40,14 @@ public class User implements UserDetails {
     @NotEmpty
     @NotNull
     private String lastname;
-
+    @ManyToMany
+    @JoinTable(
+            name = "user_preference",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "preference_id")
+    )
+    @JsonManagedReference
+    private Set<Preference> preferences;
     @OneToMany(mappedBy = "user",fetch = FetchType.LAZY, cascade = CascadeType.ALL,orphanRemoval = true)
     private List<Token> tokens;
 

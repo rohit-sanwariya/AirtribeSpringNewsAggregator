@@ -22,9 +22,9 @@ public class RoleController {
     }
 
     @GetMapping("/get/all")
-    public ResponseEntity<String> getRoles(){
-//        List<Role> roles = roleService.getRoles();
-        return ResponseEntity.ok("hello world");
+    public ResponseEntity<List<Role>> getRoles(){
+    List<Role> roles = roleService.getRoles();
+        return ResponseEntity.ok(roles);
     }
     @GetMapping("{name}")
     public Role createRole(@PathVariable("name") String name){

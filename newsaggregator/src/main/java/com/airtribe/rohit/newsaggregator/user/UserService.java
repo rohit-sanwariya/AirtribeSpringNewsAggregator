@@ -129,4 +129,11 @@ public class UserService {
     }
 
 
+    public Optional<User> getUserByName(String username) {
+        return Optional.ofNullable(userRepository.findByUsername(username));
+    }
+
+    public User updateUser(Optional<User> user) {
+        return userRepository.save(user.get());
+    }
 }
