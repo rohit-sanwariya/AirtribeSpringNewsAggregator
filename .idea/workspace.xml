@@ -6,15 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="030132c9-22f8-46c4-b2a7-c2fbc10bbbaa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/header/header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/header/header.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/preferences-dialog/preferences-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/preferences-dialog/preferences-dialog.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/preferences-dialog/preferences-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/preferences-dialog/preferences-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/Preference.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/Preference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/resources/application-dev.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
