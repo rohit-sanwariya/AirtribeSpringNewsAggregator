@@ -11,6 +11,7 @@ public class Preference {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(unique = true)
     private String name;
 
     @ManyToMany(mappedBy = "preferences",fetch = FetchType.LAZY)

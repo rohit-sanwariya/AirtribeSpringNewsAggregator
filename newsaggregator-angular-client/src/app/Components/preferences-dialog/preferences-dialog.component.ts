@@ -26,8 +26,9 @@ export class PreferencesDialogComponent {
     @Inject(MAT_DIALOG_DATA) public data:{selectedPreferences:TKeyValue[]
       ,allPreferences:TKeyValue[]}
   ) {
-    this.dialogRef.afterOpened().subscribe(data => {
+    const sub = this.dialogRef.afterOpened().subscribe(data => {
       this.preferences.setValue(this.data.selectedPreferences.map(preference => preference.id));
+      sub.unsubscribe();
     } )
   }
 
@@ -37,9 +38,13 @@ export class PreferencesDialogComponent {
 
  
 
-  save(): void {
- 
-    this.dialogRef.close(this.preferences.value);
+  save(): void { 
+    const values = this.preferences.value;
+      this.dialogRef.close(this.preferences.value);
+      setTimeout(() => {
+        this.dialogRef.close()
+      }, 500);
+      
   }
 
   close(): void {

@@ -1,0 +1,8 @@
+/* Add this to your stylesheet to make the dropdown work */
+.dropdown-menu {
+    display: none;
+  }
+  
+  .dropdown-menu.show {
+    display: block;
+  }

@@ -6,13 +6,18 @@
       </div>
   
       <!-- Links: Preferences and Logout -->
-      <div class="flex items-center space-x-4">
-        <a  class="text-white hover:underline" (click)="openPreferences()">
-          Preferences
+      <div class="container w-2/5">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <a  class="text-white hover:underline" (click)="openPreferencesCreate()">
+          Create Preferences
+        </a>
+        <a  class="text-white hover:underline" (click)="openPreferencesUpdate()">
+          Update Preferences
         </a>
         <button (click)="logout()" class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300">
           Logout
         </button>
+      </div>
       </div>
     </div>
   </header>

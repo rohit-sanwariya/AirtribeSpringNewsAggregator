@@ -1,0 +1,31 @@
+<div class="flex flex-col h-screen p-4 space-y-4">
+    <div class="flex-1 p-1">
+      <h2 mat-dialog-title class="text-2xl font-bold mb-4">Create Preferences</h2>
+    </div>
+  
+    <div class="flex-3 p-1">
+      <form   class="space-y-4">
+        <mat-form-field  class="w-full">
+          <mat-label>Preference Name</mat-label>
+          <input type="text" name="preference" id="preference" matInput [formControl]="preferences">
+        <mat-error>
+         @if (preferences.hasError('required')) {
+          <div>
+            Preference is required.
+          </div>
+         
+         }
+        </mat-error>
+        </mat-form-field>
+        
+      </form>
+    </div>
+  
+    <div class="flex-1 p-1">
+      <div mat-dialog-actions class="flex justify-end space-x-2 mt-4">
+        <button mat-flat-button (click)="close()">Cancel</button>
+        <button mat-raised-button color="primary" [disabled]="!preferences.value" (click)="save()">Save</button>
+      </div>
+    </div>
+  </div>
+  

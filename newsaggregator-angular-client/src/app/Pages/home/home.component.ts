@@ -18,16 +18,22 @@ import { HeaderComponent } from "../../Components/header/header.component";
 export default class HomeComponent  implements OnInit {
   _http = inject(HttpService);
   news = signal<INewResponse|null>(null);
+  newLoading = signal<boolean>(false);
   
 
   ngOnInit(): void {
     this._http.GET<any[]>('/auth/role/get/all').subscribe(news => {
       console.log(news);
     });
-    // this.getNews("2024-08-19","2024-08-20","popularity").subscribe({next:(value)=>{
-    //   this.news.set(value);
-    // }})
+    this.newLoading.set(true);
+    this.getNewsBasedOnPreference()
     
+  }
+  getNewsBasedOnPreference() {
+    this.getNews("2024-08-19","2024-08-20","popularity").subscribe({next:(value)=>{
+      this.news.set(value);
+      this.newLoading.set(false);
+    }})
   }
     
   getNews(fromdate: string, todate: string, sortby: string): Observable<any> {

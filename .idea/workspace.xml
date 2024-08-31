@@ -5,28 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="030132c9-22f8-46c4-b2a7-c2fbc10bbbaa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/controller/UserPreferenceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/middleware/WebClientFilters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/repository/PreferenceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/services/PreferencesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/Preference.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Models/user-auth-model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Models/user-auth-model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/header/header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/header/header.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/preferences-dialog/preferences-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/preferences-dialog/preferences-dialog.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/preferences-dialog/preferences-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Components/preferences-dialog/preferences-dialog.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/home/home.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/home/home.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Pages/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Services/http.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/Services/http.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator-angular-client/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/config/WebClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/config/WebClientConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/controller/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/controller/NewsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/middleware/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/middleware/JwtAuthFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/services/NewsApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/services/NewsApiService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/Preference.java" beforeDir="false" afterPath="$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/user/Preference.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +61,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.NewsaggregatorApiApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.NewsaggregatorApiApplication.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
@@ -151,16 +139,6 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/middleware/JwtAuthFilter.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/middleware/JwtAuthFilter.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/services/JwtTokenService.java</url>
           <line>43</line>
           <option name="timeStamp" value="13" />
@@ -169,11 +147,6 @@
           <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/services/JwtTokenService.java</url>
           <line>48</line>
           <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/middleware/JwtAuthFilter.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/services/JwtTokenService.java</url>
@@ -191,19 +164,9 @@
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/middleware/JwtAuthFilter.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/controller/RoleController.java</url>
           <line>31</line>
           <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/middleware/JwtAuthFilter.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/newsaggregator/src/main/java/com/airtribe/rohit/newsaggregator/controller/NewsController.java</url>
